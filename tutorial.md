@@ -1,7 +1,5 @@
 # Spielprogrammierung
 
-### @explicitHints true
-
 ## Einführung @showdialog
 
 ![Spielanimation](/static/tutorials/chase-the-pizza.gif)
@@ -55,6 +53,7 @@ Füge den Code hinzu, um ``||controller:meinSprite zu bewegen||`` mit dem ``||co
 
 ```typescript
 scene.setBackgroundColor(7)
+// @highlight
 let meinSprite = sprites.create(img`
 . . . . . 5 5 5 5 5 5 . . . . .
 . . . 5 5 5 5 5 5 5 5 5 5 . . .
@@ -109,9 +108,7 @@ pizza = sprites.create(img`
 
 ## Schritt 7
 
-Wir wollen das Pizza-Sprite an einer zufäll
-
-igen Position auf dem Bildschirm anzeigen lassen. Füge den folgenden Code hinzu, um das zu erreichen:
+Wir wollen das Pizza-Sprite an einer zufälligen Position auf dem Bildschirm anzeigen lassen. Füge den folgenden Code hinzu, um das zu erreichen:
 
 ```typescript
 pizza.setPosition(Math.randomRange(0, scene.screenWidth()), Math.randomRange(0, scene.screenHeight()))
