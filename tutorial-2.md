@@ -1,7 +1,5 @@
 # Chase the Pizza
 
-// ### @explicitHints true
-
 ## {Einführung @showdialog}
 
 ![Game animation](https://pxt.azureedge.net/blob/240e4e29baa921d3d9ecfda531f54d648d3319fb/static/tutorials/chase-the-pizza.gif)
