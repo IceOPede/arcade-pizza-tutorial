@@ -18,7 +18,7 @@ scene.setBackgroundColor(0)
 
 ## {Schritt 2}
 
-Füge den Code hinzu, um ein Sprite zu ``||sprites:erstellen||`` und weise ihm den Variablennamen ``||variables(noclick):meinSprite||`` zu. Verwende für den ``||sprites:Sprite-Typ||`` den ``||sprites:Spieler||``.
+Füge den Code hinzu, um ein Sprite zu ``||sprites:erstellen||`` und weise ihm den Variablennamen ``||variables(noclick):meinSprite||`` zu. Verwende für den ``||sprites:SpriteKind||`` den ``||sprites:SpriteKind.Player||``.
 
 ```typescript
 scene.setBackgroundColor(7)
@@ -78,7 +78,7 @@ controller.moveSprite(meinSprite)
 
 ## {Schritt 5}
 
-Genau wie bei ``||variables(noclick):meinSprite||``, erstelle erneut ein Sprite und setze den Variablenamen auf ``||variables(noclick):pizza||``. Dieses Mal setze die ``||sprites:Sprite-Art||`` auf ``||sprites:Food||``. Dies wird das **Pizza**-Sprite in unserem Spiel sein.
+Genau wie bei ``||variables(noclick):meinSprite||``, erstelle erneut ein Sprite und setze den Variablenamen auf ``||variables(noclick):pizza||``. Dieses Mal setze die ``||sprites:SpriteKind||`` auf ``||sprites:SpriteKind.Food||``. Dies wird das **Pizza**-Sprite in unserem Spiel sein.
 
 ```typescript
 scene.setBackgroundColor(7)
@@ -130,7 +130,7 @@ Verwende den Bildeditor für ``||variables(noclick):pizza||`` und wähle dann di
 
 ## {Schritt 7 @resetDiff}
 
-Füge deinem Code ein ``||sprites:Beim Überlappen||`` Ereignis hinzu. Setze die ``||sprites:Sprite-Art||`` des zweiten Attributes auf``||sprites:Food||``.
+Füge deinem Code ein ``||sprites:Beim Überlappen||`` Ereignis hinzu. Setze die ``||sprites:SpriteKind||`` des zweiten Attributes auf``||sprites:SpriteKind.Food||``.
 
 ```typescript
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
