@@ -163,7 +163,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 
 ## {Schritt 10}
 
-Gib den Code für die x- und y-Positionen von otherSprite ein, um eine ``||math:zufällige||`` Zahl zu verwenden. Der Arcade-Spielbildschirm ist 160 Pixel breit und 120 Pixel hoch. Im ersten ``||math:zufälligen||`` Wert in der x-Koordinate der ``||sprites:Position des otherSprite||``, ändere den maximalen Wert von **0** zu **160**. Im zweiten ``||math:zufälligen||`` Wert in der y-Koordinate ändere den maximalen Wert von **0** zu 120.
+Nun fügen wir den Code hinzu, um die x- und y-Positionen des otherSprites auf einen zufälligen Wert zusetzten. Dafür verwenden wir eine ''||math:zufälligen||'' Zahl Generator. Der Arcade-Spielbildschirm ist 160 Pixel breit und 120 Pixel hoch. Im ersten ``||math:zufälligen||`` Wert in der x-Koordinate der ``||sprites:Position des otherSprite||``, ändere den maximalen Wert von **0** zu **160**. Im zweiten ``||math:zufälligen||`` Wert in der y-Koordinate ändere den maximalen Wert von **0** zu 120.
 
 ```typescript
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
