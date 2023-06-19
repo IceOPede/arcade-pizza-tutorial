@@ -9,7 +9,8 @@
         "README.md",
         "assets.json",
         "tutorial.md",
-        "tutorial-2.md"
+        "tutorial-2.md",
+        "fange-die-pizza-tutorial.md"
     ],
     "testFiles": [
         "test.ts"
