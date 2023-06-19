@@ -1,6 +1,6 @@
 # Chase the Pizza
 
-### @explicitHints true
+// ### @explicitHints true
 
 ## {Einführung @showdialog}
 
@@ -21,9 +21,8 @@ scene.setBackgroundColor(0)
 Füge den Code hinzu, um ein Sprite zu ``||sprites:erstellen||`` und weise ihm den Variablennamen ``||variables(noclick):meinSprite||`` zu. Verwende für den ``||sprites:Sprite-Typ||`` den ``||sprites:Spieler||``.
 
 ```typescript
-let meinSprite: Sprite = null
 scene.setBackgroundColor(7)
-meinSprite = sprites.create(img`
+let meinSprite = sprites.create(img`
 . . . . . . . . . . . . . . . .
 . . . . . . . . . . . . . . . .
 . . . . . . . . . . . . . . . .
@@ -45,7 +44,7 @@ meinSprite = sprites.create(img`
 
 ## {Schritt 3}
 
-Zeichne deinen ``||sprites:Spieler||``-Charakter, indem du den Bildeditor für ``||variables(sprites):meinSprite||`` verwendest. Benutze die Farbpalette und Designwerkzeuge, um ein Bild auf der Leinwand zu zeichnen. Klicke auf **Fertig**, wenn du fertig bist.
+Zeichne deinen ``||sprites:Spieler||``-Charakter, indem du den Bildeditor für ``||variables(noclick):meinSprite||`` verwendest. Benutze die Farbpalette und Designwerkzeuge, um ein Bild auf der Leinwand zu zeichnen. Klicke auf **Fertig**, wenn du fertig bist.
 
 ![Bildeditor](https://pxt.azureedge.net/blob/425891a14de9d825142d50bef4b61e4e9ab5d5cc/static/tutorials/chase-the-pizza/image-editor-js.gif)
 
@@ -79,7 +78,7 @@ controller.moveSprite(meinSprite)
 
 ## {Schritt 5}
 
-Genau wie bei ``||variables(noclick):meinSprite||``, erstelle erneut einen Sprite und setze den Variable namen auf ``||variables(noclick):pizza||``. Dieses Mal setze die ``||sprites:Sprite-Art||`` auf ``||sprites:Food||``. Dies wird das **Pizza**-Sprite in unserem Spiel sein.
+Genau wie bei ``||variables(noclick):meinSprite||``, erstelle erneut ein Sprite und setze den Variablenamen auf ``||variables(noclick):pizza||``. Dieses Mal setze die ``||sprites:Sprite-Art||`` auf ``||sprites:Food||``. Dies wird das **Pizza**-Sprite in unserem Spiel sein.
 
 ```typescript
 scene.setBackgroundColor(7)
@@ -131,7 +130,7 @@ Verwende den Bildeditor für ``||variables(noclick):pizza||`` und wähle dann di
 
 ## {Schritt 7 @resetDiff}
 
-Füge deinem Code ein ``||sprites:Beim Überlappen||`` Ereignis hinzu. Setze die ``||sprites:Sprite-Art||`` für ``otherSprite`` als ``||sprites:Food||``.
+Füge deinem Code ein ``||sprites:Beim Überlappen||`` Ereignis hinzu. Setze die ``||sprites:Sprite-Art||`` des zweiten Attributes auf``||sprites:Food||``.
 
 ```typescript
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
@@ -152,7 +151,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 
 ## {Schritt 9}
 
-Setzten wir die Position für ``||variables(noclick):pizza||`` auf eine zufällige Positionen auf dem Bildschirm. Wir verwenden otherSprite und ``||sprites:setze seine Position||``. Verwenden Sie vorerst einfach 0 sowohl für x als auch für y.
+Nun wollen wir die Position für ``||variables(noclick):pizza||`` auf eine zufällige Positionen auf dem Bildschirm setzten. Wir verwenden otherSprite und ``||sprites:setze seine Position||``. Verwenden Sie vorerst einfach 0 sowohl für x als auch für y.
 
 ```typescript
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
@@ -176,7 +175,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 
 ## {Schritt 11}
 
-Starte den Countdown jedes mal neu. Fügen Sie den Code hinzu, um den Countdown mit ``||info:Countdown starten||`` zu starten und setzte den Wert auf 10.
+Starte den Countdown jedes mal neu, wenn sich die Sprites überlappen. Fügen den Code hinzu, um den Countdown mit ``||info:Countdown starten||`` zu starten und setzte den Wert auf 10.
 
 ```typescript
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
